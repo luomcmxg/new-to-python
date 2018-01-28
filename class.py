@@ -1,3 +1,6 @@
+import scipy
+
+
 class Robot:
     population = 0
 
@@ -25,10 +28,11 @@ class Robot:
 
 
 class SuperRobot(Robot):
-	
-	def __init__(self, Robot):
-		self.name = Robot.name
-		print("\nUpgrading to Super {}".format(self.name))
+	# pass
+    def __init__(self, Robot):
+        self.name = Robot.name
+        print("\nUpgrading to Super {}".format(self.name))
+
 
 droid1 = Robot("R2-D2")
 droid1.say_hi()
@@ -50,3 +54,4 @@ droid2.die()
 
 SuperRobot.how_many()
 print(type(droid1), type(droid2), type(Robot), type(int))
+
